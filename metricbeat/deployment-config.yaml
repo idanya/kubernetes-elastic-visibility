@@ -40,7 +40,7 @@ data:
         - state_resourcequota
       period: 10s
       host: ${NODE_NAME}
-      hosts: ["kube-state-metrics:8080"]
+      hosts: ["kube-state-metrics.kube-system.svc.cluster.local:8080"]
     #- module: kubernetes
     #  metricsets:
     #    - apiserver
